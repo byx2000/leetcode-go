@@ -7,7 +7,7 @@ import (
 )
 
 func Test(t *testing.T) {
-	assert.Equal(t, maxPathSum(BuildTree([]any{1, 2, 3})), 6)
-	assert.Equal(t, maxPathSum(BuildTree([]any{-10, 9, 20, nil, nil, 15, 7})), 42)
-	assert.Equal(t, maxPathSum(BuildTree([]any{2, -1})), 2)
+	assert.Equal(t, 6, maxPathSum(BuildTree([]any{1, 2, 3})))
+	assert.Equal(t, 42, maxPathSum(BuildTree([]any{-10, 9, 20, nil, nil, 15, 7})))
+	assert.Equal(t, 2, maxPathSum(BuildTree([]any{2, -1})))
 }

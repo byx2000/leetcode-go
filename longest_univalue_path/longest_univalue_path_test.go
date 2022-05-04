@@ -7,6 +7,6 @@ import (
 )
 
 func Test(t *testing.T) {
-	assert.Equal(t, longestUnivaluePath(BuildTree([]any{5, 4, 5, 1, 1, 5})), 2)
-	assert.Equal(t, longestUnivaluePath(BuildTree([]any{1, 4, 5, 4, 4, 5})), 2)
+	assert.Equal(t, 2, longestUnivaluePath(BuildTree([]any{5, 4, 5, 1, 1, 5})))
+	assert.Equal(t, 2, longestUnivaluePath(BuildTree([]any{1, 4, 5, 4, 4, 5})))
 }
