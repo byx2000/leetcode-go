@@ -5,10 +5,18 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
-	assert.Equal(t, 0, lengthOfLongestSubstring(""))
-	assert.Equal(t, 1, lengthOfLongestSubstring("a"))
-	assert.Equal(t, 3, lengthOfLongestSubstring("abcabcbb"))
-	assert.Equal(t, 1, lengthOfLongestSubstring("bbbbb"))
-	assert.Equal(t, 3, lengthOfLongestSubstring("pwwkew"))
+func Test1(t *testing.T) {
+	assert.Equal(t, 0, lengthOfLongestSubstring1(""))
+	assert.Equal(t, 1, lengthOfLongestSubstring1("a"))
+	assert.Equal(t, 3, lengthOfLongestSubstring1("abcabcbb"))
+	assert.Equal(t, 1, lengthOfLongestSubstring1("bbbbb"))
+	assert.Equal(t, 3, lengthOfLongestSubstring1("pwwkew"))
+}
+
+func Test2(t *testing.T) {
+	assert.Equal(t, 0, lengthOfLongestSubstring2(""))
+	assert.Equal(t, 1, lengthOfLongestSubstring2("a"))
+	assert.Equal(t, 3, lengthOfLongestSubstring2("abcabcbb"))
+	assert.Equal(t, 1, lengthOfLongestSubstring2("bbbbb"))
+	assert.Equal(t, 3, lengthOfLongestSubstring2("pwwkew"))
 }
